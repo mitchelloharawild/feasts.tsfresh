@@ -12,4 +12,5 @@ Encoding: UTF-8
 LazyData: true
 Imports: 
     reticulate
+Roxygen: list(markdown = TRUE, roclets=c('rd', 'collate', 'namespace'))
 RoxygenNote: 6.1.1
