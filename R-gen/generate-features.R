@@ -81,6 +81,7 @@ make_functions <- function(x, docs){
 
 {<docs>}
 {<names(x)>} <- function({<params>}){
+  tsfresh_available()
   out <- tsfresh$feature_extraction$feature_calculators${<names(x)>}({<params>})
   `names<-`(out, '{<names(x)>}')
 }

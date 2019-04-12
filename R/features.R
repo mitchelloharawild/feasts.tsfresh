@@ -16,6 +16,7 @@
 #' 
 #' @export
 abs_energy <- function(x){
+  tsfresh_available()
   out <- tsfresh$feature_extraction$feature_calculators$abs_energy(x)
   `names<-`(out, 'abs_energy')
 }
@@ -37,6 +38,7 @@ abs_energy <- function(x){
 #' 
 #' @export
 absolute_sum_of_changes <- function(x){
+  tsfresh_available()
   out <- tsfresh$feature_extraction$feature_calculators$absolute_sum_of_changes(x)
   `names<-`(out, 'absolute_sum_of_changes')
 }
@@ -74,6 +76,7 @@ absolute_sum_of_changes <- function(x){
 #' 
 #' @export
 agg_autocorrelation <- function(x, param){
+  tsfresh_available()
   out <- tsfresh$feature_extraction$feature_calculators$agg_autocorrelation(x, param)
   `names<-`(out, 'agg_autocorrelation')
 }
@@ -105,6 +108,7 @@ agg_autocorrelation <- function(x, param){
 #' 
 #' @export
 agg_linear_trend <- function(x, param){
+  tsfresh_available()
   out <- tsfresh$feature_extraction$feature_calculators$agg_linear_trend(x, param)
   `names<-`(out, 'agg_linear_trend')
 }
@@ -143,6 +147,7 @@ agg_linear_trend <- function(x, param){
 #' 
 #' @export
 approximate_entropy <- function(x, m, r){
+  tsfresh_available()
   out <- tsfresh$feature_extraction$feature_calculators$approximate_entropy(x, m, r)
   `names<-`(out, 'approximate_entropy')
 }
@@ -171,6 +176,7 @@ approximate_entropy <- function(x, m, r){
 #' 
 #' @export
 ar_coefficient <- function(x, param){
+  tsfresh_available()
   out <- tsfresh$feature_extraction$feature_calculators$ar_coefficient(x, param)
   `names<-`(out, 'ar_coefficient')
 }
@@ -195,6 +201,7 @@ ar_coefficient <- function(x, param){
 #' 
 #' @export
 augmented_dickey_fuller <- function(x, param){
+  tsfresh_available()
   out <- tsfresh$feature_extraction$feature_calculators$augmented_dickey_fuller(x, param)
   `names<-`(out, 'augmented_dickey_fuller')
 }
@@ -225,6 +232,7 @@ augmented_dickey_fuller <- function(x, param){
 #' 
 #' @export
 autocorrelation <- function(x, lag){
+  tsfresh_available()
   out <- tsfresh$feature_extraction$feature_calculators$autocorrelation(x, lag)
   `names<-`(out, 'autocorrelation')
 }
@@ -251,6 +259,7 @@ autocorrelation <- function(x, lag){
 #' 
 #' @export
 binned_entropy <- function(x, max_bins){
+  tsfresh_available()
   out <- tsfresh$feature_extraction$feature_calculators$binned_entropy(x, max_bins)
   `names<-`(out, 'binned_entropy')
 }
@@ -287,6 +296,7 @@ binned_entropy <- function(x, max_bins){
 #' 
 #' @export
 c3 <- function(x, lag){
+  tsfresh_available()
   out <- tsfresh$feature_extraction$feature_calculators$c3(x, lag)
   `names<-`(out, 'c3')
 }
@@ -319,6 +329,7 @@ c3 <- function(x, lag){
 #' 
 #' @export
 change_quantiles <- function(x, ql, qh, isabs, f_agg){
+  tsfresh_available()
   out <- tsfresh$feature_extraction$feature_calculators$change_quantiles(x, ql, qh, isabs, f_agg)
   `names<-`(out, 'change_quantiles')
 }
@@ -350,6 +361,7 @@ change_quantiles <- function(x, ql, qh, isabs, f_agg){
 #' 
 #' @export
 cid_ce <- function(x, normalize){
+  tsfresh_available()
   out <- tsfresh$feature_extraction$feature_calculators$cid_ce(x, normalize)
   `names<-`(out, 'cid_ce')
 }
@@ -369,6 +381,7 @@ cid_ce <- function(x, normalize){
 #' 
 #' @export
 count_above_mean <- function(x){
+  tsfresh_available()
   out <- tsfresh$feature_extraction$feature_calculators$count_above_mean(x)
   `names<-`(out, 'count_above_mean')
 }
@@ -388,6 +401,7 @@ count_above_mean <- function(x){
 #' 
 #' @export
 count_below_mean <- function(x){
+  tsfresh_available()
   out <- tsfresh$feature_extraction$feature_calculators$count_below_mean(x)
   `names<-`(out, 'count_below_mean')
 }
@@ -418,6 +432,7 @@ count_below_mean <- function(x){
 #' 
 #' @export
 cwt_coefficients <- function(x, param){
+  tsfresh_available()
   out <- tsfresh$feature_extraction$feature_calculators$cwt_coefficients(x, param)
   `names<-`(out, 'cwt_coefficients')
 }
@@ -449,6 +464,7 @@ cwt_coefficients <- function(x, param){
 #' 
 #' @export
 energy_ratio_by_chunks <- function(x, param){
+  tsfresh_available()
   out <- tsfresh$feature_extraction$feature_calculators$energy_ratio_by_chunks(x, param)
   `names<-`(out, 'energy_ratio_by_chunks')
 }
@@ -471,6 +487,7 @@ energy_ratio_by_chunks <- function(x, param){
 #' 
 #' @export
 fft_aggregated <- function(x, param){
+  tsfresh_available()
   out <- tsfresh$feature_extraction$feature_calculators$fft_aggregated(x, param)
   `names<-`(out, 'fft_aggregated')
 }
@@ -499,6 +516,7 @@ fft_aggregated <- function(x, param){
 #' 
 #' @export
 fft_coefficient <- function(x, param){
+  tsfresh_available()
   out <- tsfresh$feature_extraction$feature_calculators$fft_coefficient(x, param)
   `names<-`(out, 'fft_coefficient')
 }
@@ -519,6 +537,7 @@ fft_coefficient <- function(x, param){
 #' 
 #' @export
 first_location_of_maximum <- function(x){
+  tsfresh_available()
   out <- tsfresh$feature_extraction$feature_calculators$first_location_of_maximum(x)
   `names<-`(out, 'first_location_of_maximum')
 }
@@ -539,6 +558,7 @@ first_location_of_maximum <- function(x){
 #' 
 #' @export
 first_location_of_minimum <- function(x){
+  tsfresh_available()
   out <- tsfresh$feature_extraction$feature_calculators$first_location_of_minimum(x)
   `names<-`(out, 'first_location_of_minimum')
 }
@@ -574,6 +594,7 @@ first_location_of_minimum <- function(x){
 #' 
 #' @export
 friedrich_coefficients <- function(x, c, param){
+  tsfresh_available()
   out <- tsfresh$feature_extraction$feature_calculators$friedrich_coefficients(x, c, param)
   `names<-`(out, 'friedrich_coefficients')
 }
@@ -593,6 +614,7 @@ friedrich_coefficients <- function(x, c, param){
 #' 
 #' @export
 has_duplicate <- function(x){
+  tsfresh_available()
   out <- tsfresh$feature_extraction$feature_calculators$has_duplicate(x)
   `names<-`(out, 'has_duplicate')
 }
@@ -612,6 +634,7 @@ has_duplicate <- function(x){
 #' 
 #' @export
 has_duplicate_max <- function(x){
+  tsfresh_available()
   out <- tsfresh$feature_extraction$feature_calculators$has_duplicate_max(x)
   `names<-`(out, 'has_duplicate_max')
 }
@@ -631,6 +654,7 @@ has_duplicate_max <- function(x){
 #' 
 #' @export
 has_duplicate_min <- function(x){
+  tsfresh_available()
   out <- tsfresh$feature_extraction$feature_calculators$has_duplicate_min(x)
   `names<-`(out, 'has_duplicate_min')
 }
@@ -653,6 +677,7 @@ has_duplicate_min <- function(x){
 #' 
 #' @export
 index_mass_quantile <- function(x, param){
+  tsfresh_available()
   out <- tsfresh$feature_extraction$feature_calculators$index_mass_quantile(x, param)
   `names<-`(out, 'index_mass_quantile')
 }
@@ -673,6 +698,7 @@ index_mass_quantile <- function(x, param){
 #' 
 #' @export
 kurtosis <- function(x){
+  tsfresh_available()
   out <- tsfresh$feature_extraction$feature_calculators$kurtosis(x)
   `names<-`(out, 'kurtosis')
 }
@@ -700,6 +726,7 @@ kurtosis <- function(x){
 #' 
 #' @export
 large_standard_deviation <- function(x, r){
+  tsfresh_available()
   out <- tsfresh$feature_extraction$feature_calculators$large_standard_deviation(x, r)
   `names<-`(out, 'large_standard_deviation')
 }
@@ -720,6 +747,7 @@ large_standard_deviation <- function(x, r){
 #' 
 #' @export
 last_location_of_maximum <- function(x){
+  tsfresh_available()
   out <- tsfresh$feature_extraction$feature_calculators$last_location_of_maximum(x)
   `names<-`(out, 'last_location_of_maximum')
 }
@@ -740,6 +768,7 @@ last_location_of_maximum <- function(x){
 #' 
 #' @export
 last_location_of_minimum <- function(x){
+  tsfresh_available()
   out <- tsfresh$feature_extraction$feature_calculators$last_location_of_minimum(x)
   `names<-`(out, 'last_location_of_minimum')
 }
@@ -759,6 +788,7 @@ last_location_of_minimum <- function(x){
 #' 
 #' @export
 length <- function(x){
+  tsfresh_available()
   out <- tsfresh$feature_extraction$feature_calculators$length(x)
   `names<-`(out, 'length')
 }
@@ -786,6 +816,7 @@ length <- function(x){
 #' 
 #' @export
 linear_trend <- function(x, param){
+  tsfresh_available()
   out <- tsfresh$feature_extraction$feature_calculators$linear_trend(x, param)
   `names<-`(out, 'linear_trend')
 }
@@ -805,6 +836,7 @@ linear_trend <- function(x, param){
 #' 
 #' @export
 longest_strike_above_mean <- function(x){
+  tsfresh_available()
   out <- tsfresh$feature_extraction$feature_calculators$longest_strike_above_mean(x)
   `names<-`(out, 'longest_strike_above_mean')
 }
@@ -824,6 +856,7 @@ longest_strike_above_mean <- function(x){
 #' 
 #' @export
 longest_strike_below_mean <- function(x){
+  tsfresh_available()
   out <- tsfresh$feature_extraction$feature_calculators$longest_strike_below_mean(x)
   `names<-`(out, 'longest_strike_below_mean')
 }
@@ -858,6 +891,7 @@ longest_strike_below_mean <- function(x){
 #' 
 #' @export
 max_langevin_fixed_point <- function(x, m, r){
+  tsfresh_available()
   out <- tsfresh$feature_extraction$feature_calculators$max_langevin_fixed_point(x, m, r)
   `names<-`(out, 'max_langevin_fixed_point')
 }
@@ -877,6 +911,7 @@ max_langevin_fixed_point <- function(x, m, r){
 #' 
 #' @export
 maximum <- function(x){
+  tsfresh_available()
   out <- tsfresh$feature_extraction$feature_calculators$maximum(x)
   `names<-`(out, 'maximum')
 }
@@ -896,6 +931,7 @@ maximum <- function(x){
 #' 
 #' @export
 mean <- function(x){
+  tsfresh_available()
   out <- tsfresh$feature_extraction$feature_calculators$mean(x)
   `names<-`(out, 'mean')
 }
@@ -918,6 +954,7 @@ mean <- function(x){
 #' 
 #' @export
 mean_abs_change <- function(x){
+  tsfresh_available()
   out <- tsfresh$feature_extraction$feature_calculators$mean_abs_change(x)
   `names<-`(out, 'mean_abs_change')
 }
@@ -939,6 +976,7 @@ mean_abs_change <- function(x){
 #' 
 #' @export
 mean_change <- function(x){
+  tsfresh_available()
   out <- tsfresh$feature_extraction$feature_calculators$mean_change(x)
   `names<-`(out, 'mean_change')
 }
@@ -960,6 +998,7 @@ mean_change <- function(x){
 #' 
 #' @export
 mean_second_derivative_central <- function(x){
+  tsfresh_available()
   out <- tsfresh$feature_extraction$feature_calculators$mean_second_derivative_central(x)
   `names<-`(out, 'mean_second_derivative_central')
 }
@@ -979,6 +1018,7 @@ mean_second_derivative_central <- function(x){
 #' 
 #' @export
 median <- function(x){
+  tsfresh_available()
   out <- tsfresh$feature_extraction$feature_calculators$median(x)
   `names<-`(out, 'median')
 }
@@ -998,6 +1038,7 @@ median <- function(x){
 #' 
 #' @export
 minimum <- function(x){
+  tsfresh_available()
   out <- tsfresh$feature_extraction$feature_calculators$minimum(x)
   `names<-`(out, 'minimum')
 }
@@ -1021,6 +1062,7 @@ minimum <- function(x){
 #' 
 #' @export
 number_crossing_m <- function(x, m){
+  tsfresh_available()
   out <- tsfresh$feature_extraction$feature_calculators$number_crossing_m(x, m)
   `names<-`(out, 'number_crossing_m')
 }
@@ -1044,6 +1086,7 @@ number_crossing_m <- function(x, m){
 #' 
 #' @export
 number_cwt_peaks <- function(x, n){
+  tsfresh_available()
   out <- tsfresh$feature_extraction$feature_calculators$number_cwt_peaks(x, n)
   `names<-`(out, 'number_cwt_peaks')
 }
@@ -1078,6 +1121,7 @@ number_cwt_peaks <- function(x, n){
 #' 
 #' @export
 number_peaks <- function(x, n){
+  tsfresh_available()
   out <- tsfresh$feature_extraction$feature_calculators$number_peaks(x, n)
   `names<-`(out, 'number_peaks')
 }
@@ -1118,6 +1162,7 @@ number_peaks <- function(x, n){
 #' 
 #' @export
 partial_autocorrelation <- function(x, param){
+  tsfresh_available()
   out <- tsfresh$feature_extraction$feature_calculators$partial_autocorrelation(x, param)
   `names<-`(out, 'partial_autocorrelation')
 }
@@ -1143,6 +1188,7 @@ partial_autocorrelation <- function(x, param){
 #' 
 #' @export
 percentage_of_reoccurring_datapoints_to_all_datapoints <- function(x){
+  tsfresh_available()
   out <- tsfresh$feature_extraction$feature_calculators$percentage_of_reoccurring_datapoints_to_all_datapoints(x)
   `names<-`(out, 'percentage_of_reoccurring_datapoints_to_all_datapoints')
 }
@@ -1168,6 +1214,7 @@ percentage_of_reoccurring_datapoints_to_all_datapoints <- function(x){
 #' 
 #' @export
 percentage_of_reoccurring_values_to_all_values <- function(x){
+  tsfresh_available()
   out <- tsfresh$feature_extraction$feature_calculators$percentage_of_reoccurring_values_to_all_values(x)
   `names<-`(out, 'percentage_of_reoccurring_values_to_all_values')
 }
@@ -1189,6 +1236,7 @@ percentage_of_reoccurring_values_to_all_values <- function(x){
 #' 
 #' @export
 quantile <- function(x, q){
+  tsfresh_available()
   out <- tsfresh$feature_extraction$feature_calculators$quantile(x, q)
   `names<-`(out, 'quantile')
 }
@@ -1212,6 +1260,7 @@ quantile <- function(x, q){
 #' 
 #' @export
 range_count <- function(x, min, max){
+  tsfresh_available()
   out <- tsfresh$feature_extraction$feature_calculators$range_count(x, min, max)
   `names<-`(out, 'range_count')
 }
@@ -1231,6 +1280,7 @@ range_count <- function(x, min, max){
 #' 
 #' @export
 ratio_beyond_r_sigma <- function(x){
+  tsfresh_available()
   out <- tsfresh$feature_extraction$feature_calculators$ratio_beyond_r_sigma(x)
   `names<-`(out, 'ratio_beyond_r_sigma')
 }
@@ -1254,6 +1304,7 @@ ratio_beyond_r_sigma <- function(x){
 #' 
 #' @export
 ratio_value_number_to_time_series_length <- function(x){
+  tsfresh_available()
   out <- tsfresh$feature_extraction$feature_calculators$ratio_value_number_to_time_series_length(x)
   `names<-`(out, 'ratio_value_number_to_time_series_length')
 }
@@ -1279,6 +1330,7 @@ ratio_value_number_to_time_series_length <- function(x){
 #' 
 #' @export
 sample_entropy <- function(x){
+  tsfresh_available()
   out <- tsfresh$feature_extraction$feature_calculators$sample_entropy(x)
   `names<-`(out, 'sample_entropy')
 }
@@ -1291,6 +1343,7 @@ sample_entropy <- function(x){
 #' 
 #' @export
 set_property <- function(){
+  tsfresh_available()
   out <- tsfresh$feature_extraction$feature_calculators$set_property()
   `names<-`(out, 'set_property')
 }
@@ -1311,6 +1364,7 @@ set_property <- function(){
 #' 
 #' @export
 skewness <- function(x){
+  tsfresh_available()
   out <- tsfresh$feature_extraction$feature_calculators$skewness(x)
   `names<-`(out, 'skewness')
 }
@@ -1335,6 +1389,7 @@ skewness <- function(x){
 #' 
 #' @export
 spkt_welch_density <- function(x, param){
+  tsfresh_available()
   out <- tsfresh$feature_extraction$feature_calculators$spkt_welch_density(x, param)
   `names<-`(out, 'spkt_welch_density')
 }
@@ -1354,6 +1409,7 @@ spkt_welch_density <- function(x, param){
 #' 
 #' @export
 standard_deviation <- function(x){
+  tsfresh_available()
   out <- tsfresh$feature_extraction$feature_calculators$standard_deviation(x)
   `names<-`(out, 'standard_deviation')
 }
@@ -1374,6 +1430,7 @@ standard_deviation <- function(x){
 #' 
 #' @export
 sum_of_reoccurring_data_points <- function(x){
+  tsfresh_available()
   out <- tsfresh$feature_extraction$feature_calculators$sum_of_reoccurring_data_points(x)
   `names<-`(out, 'sum_of_reoccurring_data_points')
 }
@@ -1394,6 +1451,7 @@ sum_of_reoccurring_data_points <- function(x){
 #' 
 #' @export
 sum_of_reoccurring_values <- function(x){
+  tsfresh_available()
   out <- tsfresh$feature_extraction$feature_calculators$sum_of_reoccurring_values(x)
   `names<-`(out, 'sum_of_reoccurring_values')
 }
@@ -1413,6 +1471,7 @@ sum_of_reoccurring_values <- function(x){
 #' 
 #' @export
 sum_values <- function(x){
+  tsfresh_available()
   out <- tsfresh$feature_extraction$feature_calculators$sum_values(x)
   `names<-`(out, 'sum_values')
 }
@@ -1436,6 +1495,7 @@ sum_values <- function(x){
 #' 
 #' @export
 symmetry_looking <- function(x, r){
+  tsfresh_available()
   out <- tsfresh$feature_extraction$feature_calculators$symmetry_looking(x, r)
   `names<-`(out, 'symmetry_looking')
 }
@@ -1472,6 +1532,7 @@ symmetry_looking <- function(x, r){
 #' 
 #' @export
 time_reversal_asymmetry_statistic <- function(x, lag){
+  tsfresh_available()
   out <- tsfresh$feature_extraction$feature_calculators$time_reversal_asymmetry_statistic(x, lag)
   `names<-`(out, 'time_reversal_asymmetry_statistic')
 }
@@ -1493,6 +1554,7 @@ time_reversal_asymmetry_statistic <- function(x, lag){
 #' 
 #' @export
 value_count <- function(x, value){
+  tsfresh_available()
   out <- tsfresh$feature_extraction$feature_calculators$value_count(x, value)
   `names<-`(out, 'value_count')
 }
@@ -1512,6 +1574,7 @@ value_count <- function(x, value){
 #' 
 #' @export
 variance <- function(x){
+  tsfresh_available()
   out <- tsfresh$feature_extraction$feature_calculators$variance(x)
   `names<-`(out, 'variance')
 }
@@ -1532,6 +1595,7 @@ variance <- function(x){
 #' 
 #' @export
 variance_larger_than_standard_deviation <- function(x){
+  tsfresh_available()
   out <- tsfresh$feature_extraction$feature_calculators$variance_larger_than_standard_deviation(x)
   `names<-`(out, 'variance_larger_than_standard_deviation')
 }
