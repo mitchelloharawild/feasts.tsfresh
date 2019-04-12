@@ -4,17 +4,17 @@
 \alias{friedrich_coefficients}
 \title{Friedrich coefficients}
 \usage{
-friedrich_coefficients(x, c, param)
+friedrich_coefficients(x, param)
 }
 \arguments{
 \item{x}{the time series to calculate the feature of
 (type:  numeric vector)}
 
-\item{c}{the time series name
-(type:  str)}
-
 \item{param}{contains dictionaries {"coeff": x} with x int and x >= 0
 (type:  list)}
+
+\item{c}{the time series name
+(type:  str)}
 }
 \value{
 the different feature values

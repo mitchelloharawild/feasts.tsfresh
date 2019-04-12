@@ -4,7 +4,7 @@
 \alias{set_property}
 \title{Set property}
 \usage{
-set_property()
+set_property(key, value)
 }
 \description{
 This method returns a decorator that sets the property key of the function to value

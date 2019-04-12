@@ -4,7 +4,7 @@
 \alias{ratio_beyond_r_sigma}
 \title{Ratio beyond r sigma}
 \usage{
-ratio_beyond_r_sigma(x)
+ratio_beyond_r_sigma(x, r)
 }
 \arguments{
 \item{x}{the time series to calculate the feature of

@@ -4,7 +4,7 @@
 \alias{symmetry_looking}
 \title{Symmetry looking}
 \usage{
-symmetry_looking(x, r)
+symmetry_looking(x, param)
 }
 \arguments{
 \item{x}{the time series to calculate the feature of

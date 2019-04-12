@@ -4,17 +4,17 @@
 \alias{max_langevin_fixed_point}
 \title{Max langevin fixed point}
 \usage{
-max_langevin_fixed_point(x, m, r)
+max_langevin_fixed_point(x, r, m)
 }
 \arguments{
 \item{x}{the time series to calculate the feature of
 (type:  numeric vector)}
 
-\item{m}{order of polynom to fit for estimating fixed points of dynamics
-(type:  int)}
-
 \item{r}{number of quantils to use for averaging
 (type:  float)}
+
+\item{m}{order of polynom to fit for estimating fixed points of dynamics
+(type:  int)}
 }
 \value{
 Largest fixed point of deterministic dynamics
