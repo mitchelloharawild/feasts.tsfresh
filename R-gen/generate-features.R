@@ -72,9 +72,7 @@ convert_docs <- function(x){
 }
 
 make_functions <- function(x, docs){
-  # Extract params
-  pos <- gregexpr("@param .+? ", docs)
-  params <- map(regmatches(docs, pos), ~ paste0(trimws(gsub("@param", "", .x)), collapse = ", "))
+  params <- x %>% map_chr(~ paste0(.x$func_code$co_varnames[seq_len(.x$func_code$co_argcount)], collapse = ", "))
 
   glue::glue(.open = "{<", .close = ">}",
 "

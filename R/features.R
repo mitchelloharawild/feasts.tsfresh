@@ -593,9 +593,9 @@ first_location_of_minimum <- function(x){
 #' 
 #' 
 #' @export
-friedrich_coefficients <- function(x, c, param){
+friedrich_coefficients <- function(x, param){
   tsfresh_available()
-  out <- tsfresh$feature_extraction$feature_calculators$friedrich_coefficients(x, c, param)
+  out <- tsfresh$feature_extraction$feature_calculators$friedrich_coefficients(x, param)
   `names<-`(out, 'friedrich_coefficients')
 }
 
@@ -890,9 +890,9 @@ longest_strike_below_mean <- function(x){
 #' 
 #' 
 #' @export
-max_langevin_fixed_point <- function(x, m, r){
+max_langevin_fixed_point <- function(x, r, m){
   tsfresh_available()
-  out <- tsfresh$feature_extraction$feature_calculators$max_langevin_fixed_point(x, m, r)
+  out <- tsfresh$feature_extraction$feature_calculators$max_langevin_fixed_point(x, r, m)
   `names<-`(out, 'max_langevin_fixed_point')
 }
 
@@ -1279,9 +1279,9 @@ range_count <- function(x, min, max){
 #' 
 #' 
 #' @export
-ratio_beyond_r_sigma <- function(x){
+ratio_beyond_r_sigma <- function(x, r){
   tsfresh_available()
-  out <- tsfresh$feature_extraction$feature_calculators$ratio_beyond_r_sigma(x)
+  out <- tsfresh$feature_extraction$feature_calculators$ratio_beyond_r_sigma(x, r)
   `names<-`(out, 'ratio_beyond_r_sigma')
 }
 
@@ -1342,9 +1342,9 @@ sample_entropy <- function(x){
 #' 
 #' 
 #' @export
-set_property <- function(){
+set_property <- function(key, value){
   tsfresh_available()
-  out <- tsfresh$feature_extraction$feature_calculators$set_property()
+  out <- tsfresh$feature_extraction$feature_calculators$set_property(key, value)
   `names<-`(out, 'set_property')
 }
 
@@ -1494,9 +1494,9 @@ sum_values <- function(x){
 #' 
 #' 
 #' @export
-symmetry_looking <- function(x, r){
+symmetry_looking <- function(x, param){
   tsfresh_available()
-  out <- tsfresh$feature_extraction$feature_calculators$symmetry_looking(x, r)
+  out <- tsfresh$feature_extraction$feature_calculators$symmetry_looking(x, param)
   `names<-`(out, 'symmetry_looking')
 }
 
