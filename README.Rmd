@@ -25,5 +25,18 @@ You can install the development version of feasts.tsfresh from [Github](https://
 
 ``` r
 devtools::install_github("mitchelloharawild/feasts.tsfresh")
-feasts.tsfresh::install_prophet()
+feasts.tsfresh::install_tsfresh()
 ```
+
+## Example
+
+```{r, message = FALSE}
+library(tsibble)
+library(feasts)
+library(feasts.tsfresh)
+
+tsibbledata::aus_retail %>% 
+  filter(Industry == "Food retailing") %>% 
+  features(Turnover, features = tsfresh_features)
+```
+
