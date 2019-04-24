@@ -4,10 +4,12 @@
 \alias{tsfresh_features}
 \title{Extract tsfresh features}
 \usage{
-tsfresh_features(x)
+tsfresh_features(x, ...)
 }
 \arguments{
 \item{x}{A vector (must be sorted in time order)}
+
+\item{...}{Unused.}
 }
 \description{
 Extract tsfresh features
